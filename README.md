@@ -166,12 +166,3 @@ B.Tech Computer Science (Cybersecurity & AI Enthusiast)
 
 ```
 
----
-
-Agar chaho to main:
-- `requirements.txt` bana doon  
-- README ko **short version (college submission)** me convert kar doon  
-- Ya **screenshots + diagrams** ke saath professional README bana doon  
-
-Bas batao 👍
-```
