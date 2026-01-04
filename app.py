@@ -20,8 +20,8 @@ st.set_page_config(
 def load_artifacts():
     try:
         # Load files safely
-        scaler = joblib.load('scaler (2).pkl')
-        label_encoder = joblib.load('label_encoder (2).pkl')
+        scaler = joblib.load('scaler.pkl')
+        label_encoder = joblib.load('label_encoder.pkl')
         model = joblib.load('random_forest_model.pkl')
         with open('selected_features.pkl', 'rb') as f:
             features_list = pickle.load(f)
@@ -330,4 +330,5 @@ elif app_mode == "Live Monitor":
 
     # Show data even when stopped
     elif len(st.session_state.scan_data) > 0:
+
         table_ph.dataframe(pd.DataFrame(st.session_state.scan_data), use_container_width=True)
